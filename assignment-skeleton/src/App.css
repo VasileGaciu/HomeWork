@@ -1,0 +1,31 @@
+.App {
+  margin: 2rem;
+}
+
+.solution-container {
+  border-top: 1px solid black;
+  margin-top: 1rem;
+}
+
+.solution-exercice1{
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+}
+
+.solution-exercice3{
+  height: 200px;
+  width: 200px;
+}
+.solution-exercice3 > Button{
+  margin: 3px;
+  text-transform: unset !important;
+}
+
+.forrm-exemple{
+  margin: 5px;
+}
