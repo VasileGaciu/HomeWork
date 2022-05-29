@@ -11,19 +11,19 @@ function Exercise3() {
         </p>
       </div>
       <div className="solution-container">
-      <div className="solution-exercice3"> 
-      <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 1</Button>
-      <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 2</Button>
-      <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 3</Button>
-      <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 4</Button>
+        <div className="solution-exercice3">
+          <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 1</Button>
+          <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 2</Button>
+          <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 3</Button>
+          <Button variant="contained" uppercase={false} onClick={getButtonClickName}>Button 4</Button>
+        </div>
       </div>
-      </div> 
     </div>
   );
 }
 
-function getButtonClickName(event){
-alert(event.target.innerText); 
+function getButtonClickName(event) {
+  alert(event.target.innerText);
 }
 
 export default Exercise3;

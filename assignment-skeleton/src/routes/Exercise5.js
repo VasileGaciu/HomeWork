@@ -28,20 +28,20 @@ function Exercise5() {
           Use the map function to render the array in an unordered list.
         </p>
         <div className="solution-container">
-          <ul>  
-          {usersArray.map(user => <li key={user}>{user}</li>)}
-         </ul>
+          <ul>
+            {usersArray.map(user => <li key={user}>{user}</li>)}
+          </ul>
         </div>
       </div>
     </div>
   );
 }
 
-function stringToArray(users){
-  const userSubString = users.substring(1,users.length - 6);
+function stringToArray(users) {
+  const userSubString = users.substring(1, users.length - 6);
   const usersArray = userSubString.split(",");
-  for(let i = 0; i < usersArray.length; i++){
-    usersArray[i] = usersArray[i].substring(6,usersArray[i].length - 1);
+  for (let i = 0; i < usersArray.length; i++) {
+    usersArray[i] = usersArray[i].substring(6, usersArray[i].length - 1);
   }
   return usersArray;
 }

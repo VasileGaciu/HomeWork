@@ -13,7 +13,7 @@ function Exercise2() {
     </div>
   );
 }
-function onClickEvent(event){
+function onClickEvent(event) {
   alert("You cliked me. Thanks!");
 }
 

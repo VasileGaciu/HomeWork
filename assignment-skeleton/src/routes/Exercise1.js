@@ -10,7 +10,7 @@ function Exercise1() {
       </div>
       <div className="solution-container">
         <div className="solution-exercice1">
-        <h3>Hello World</h3>
+          <h3>Hello World</h3>
         </div>
       </div>
     </div>

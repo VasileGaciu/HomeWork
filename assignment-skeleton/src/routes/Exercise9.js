@@ -1,12 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import UsersTable from './UsersTable'
 
 function Exercise9() {
-  const [user, setUser] = useState([]);
-  useEffect(() => {
-  fetch("https://random-data-api.com/api/users/random_user?size=10")
-  .then((response) => response.json())
-  .then( data => setUser(data));
-  },[]);
   return (
     <div>
       <div>
@@ -21,7 +16,7 @@ function Exercise9() {
           retrieved.
         </p>
         <div className="solution-container">
-         
+          <UsersTable />
         </div>
       </div>
     </div>

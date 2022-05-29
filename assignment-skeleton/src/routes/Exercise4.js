@@ -11,9 +11,9 @@ function Exercise4() {
           clicked, and display the number.
         </p>
         <div className="solution-container">
-         <p>You pressed the button {count} times</p> 
-         <Button variant="contained" style={{textTransform: 'none'}} onClick={() => setCount(count + 1)}>Button 1</Button>
-       </div>
+          <p>You pressed the button {count} times</p>
+          <Button variant="contained" style={{ textTransform: 'none' }} onClick={() => setCount(count + 1)}>Button 1</Button>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,6 @@
 import { CodeBlock, dracula } from "react-code-blocks";
 import React from "react"
-import Grid from '@mui/material/Grid';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import { styled } from '@mui/material/styles';
+import CustomList from "./CustomList";
 
 function Exercise6() {
   //If you want to use me, be aware I am a string not an Array.
@@ -35,37 +32,10 @@ function Exercise6() {
           accordingly.
         </p>
         <div className="solution-container">
-        <CustomList first = {users}/>
+          <CustomList first={users} />
         </div>
       </div>
     </div>
-  );
-}
-
-function stringToArray(users){
-  const userSubString = users.substring(1,users.length - 6);
-  const usersArray = userSubString.split(",");
-  for(let i = 0; i < usersArray.length; i++){
-    usersArray[i] = usersArray[i].substring(6,usersArray[i].length - 1);
-  }
-  return usersArray;
-}
-
-const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-}));
-
- function CustomList(users){
-  const userToString = users.first.toString();
-  const usersArray = stringToArray(userToString);
-  return(
-  <Grid item xs={6} md={1}>
-        <Demo>
-          <List>
-          {usersArray.map(user => <ListItem key={user}>{user}</ListItem>)}
-          </List>
-        </Demo>
-      </Grid> 
   );
 }
 

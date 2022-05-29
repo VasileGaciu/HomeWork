@@ -1,9 +1,8 @@
 import { CodeBlock, dracula } from "react-code-blocks";
 import React from "react"
-import Grid from '@mui/material/Grid';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import { styled } from '@mui/material/styles';
+import ColoredList from "./ColoredList";
+
+
 
 function Exercise8() {
   //If you want to use me, be aware I am a string not an Array.
@@ -39,7 +38,7 @@ function Exercise8() {
       "name": "Hannah Reid",
       "favoriteColor": "green",
     },
-  ]`;                 
+  ]`
   return (
     <div>
       <div>
@@ -56,30 +55,11 @@ function Exercise8() {
           theme={dracula}
         />
         <div className="solution-container">
-          <CustomList/>
+          <ColoredList />
         </div>
       </div>
     </div>
   );
 }
 
-const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-}));
-function CustomList(){
-  const userArray = ["Christopher Washington", "Ben Hayes", "Skye Roberts",
-  "Hugo Gray", "Eddie Lee", "Hannah Reid"];
-  let index = 0;
-  const styles = ["red" , "blue", "yellow", "violet", "pink", "green"];
-  return(
-  <Grid item xs={6} md={1}>
-        <Demo>
-          <List>
-           {userArray.map(user => <ListItem key = {user} 
-           style = {{color: styles[index++]}}>{user}</ListItem>)}
-          </List>
-        </Demo>
-      </Grid> 
-  );
-}
 export default Exercise8;
